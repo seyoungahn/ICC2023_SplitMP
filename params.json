@@ -1,0 +1,21 @@
+{
+  "n_nodes": 10,
+  "syst_dim": [100, 100],
+  "syst_vel": [0, 10],
+  "syst_max_wait": 10,
+  "syst_lambda": 0.01,
+  "syst_init_stationary": true,
+  "syst_tx_power": 23,
+  "models": [
+    {
+      "model": "lstm",
+      "lr": 0.01,
+      "seq_len": 10
+    },
+    {
+      "model": "rnn",
+      "lr": 0.03,
+      "seq_len": 10
+    }
+  ]
+}
